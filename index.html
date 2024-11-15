@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teletubbies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/_teletubbies_logo.png" type="image/png">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/teletubbies_logo.png" alt="Teletubbies Logo" width="50" height="50">
+            <h1>Teletubbies</h1>
+        </div>
+    </nav>
+
+    <style>
+        body {
+            background-color: rgb(107, 175, 238);
+            background-image: url("Images/bg3.png"); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+    </style>
+    
+    
+    <header class="header">
+        <h1>WELCOME</h1>
+    </header>
+    
+
+    <div class="carousel-container">
+        <!-- Carousel -->
+        <div class="carousel">
+            <div class="carousel-inner" id="carousel">
+                
+                <!-- Carousel items with image container -->
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="images/bananasmoothies.png" alt="Banana Sips n' Slice">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="images/augustea.jpg" alt="Augustea">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="images/m&k.png" alt="M & K Restaurant">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="images/stitchbliss.png" alt="Stitch Bliss">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="images/vblooms.png" alt="VBlooms Shop">
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="moveCarousel(-1)">&#10094;</a>
+            <a class="next" onclick="moveCarousel(1)">&#10095;</a>
+    </div>
+        
+    <div class="sidebar">
+        <ul>
+            <li>
+                <img src="images/sunbaby.png" alt="Sun baby">
+                <a href="#" onclick="showPopup('description1')">Mariel Nartia</a>
+            </li>
+            <li>
+                <img src="images/tinky-winky.png" alt="Tinky-winky">
+                <a href="#" onclick="showPopup('description2')">Melwayne Riana Lora</a>
+            </li>
+            <li>
+                <img src="images/laa-laa.png" alt="Laa-laa">
+                <a href="#" onclick="showPopup('description3')">Kean Ashley Lagariza</a>
+            </li>
+            <li>
+                <img src="images/po.png" alt="Po">
+                <a href="#" onclick="showPopup('description4')">Elvie Depaz</a>
+            </li>
+            <li>
+                <img src="images/dipsy.png" alt="Dipsy">
+                <a href="#" onclick="showPopup('description5')">Rikka Joy Mansueto</a>
+            </li>
+        </ul>
+        
+
+        <!-- Pop-up Descriptions -->
+        <div id="description1" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('description1')">&times;</span>
+                <img src="images/mariel.jpg" alt="Mariel Nartia" class="popup-image">
+                <h1>Mariel Nartia</h1>
+                <h3>M & K Restaurant</h3>
+                <p>Come Hungry, Leave Happy.  We offer a delightful dining experience.  Our welcoming atmosphere and commitment to quality ensure a memorable meal for every guest.</p>
+                <a href="http://marielwebsite.com" target="_blank" class="popup-button">Visit Website</a>
+            </div>
+        </div>
+        <div id="description2" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('description2')">&times;</span>
+                <img src="images/melwayne.jpg" alt="Melwayne Riana Lora" class="popup-image">
+                <h1>Melwayne Riana Lora</h1>
+                <h3>Stitch Bliss</h3>
+                <p>Experience the art of relaxation at Stitch Bliss, where every stitch is a step toward serenity. Immerse yourself in our soothing creations, crafted with care and creativity to bring comfort and style to your everyday life. Stitch Bliss – where every thread tells a story of peace and joy!</p>
+                <a href="https://yanaticrazy.github.io/Stitch-Bliss/" class="popup-button">Visit Website</a>
+            </div>
+        </div>
+        <div id="description3" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('description3')">&times;</span>
+                <img src="images/kean.jpg" alt="Kean Ashley Lagariza" class="popup-image">
+                <h1>Kean Ashley Lagariza</h1>
+                <h3>Banana Sips n' Slice</h3>
+                <p>We turn bananas into tasty treats. Try our crispy banana fries and refreshing banana smoothies. They're perfect for any snack time and guaranteed to bring a smile. Come enjoy a bite of banana happiness with us today!</p>
+                <a href="http://keanwebsite.com" target="_blank" class="popup-button">Visit Website</a>
+            </div>
+        </div>
+        <div id="description4" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('description4')">&times;</span>
+                <img src="images/elvie.jpg" alt="Elvie Depaz" class="popup-image">
+                <h1>Elvie Depaz</h1>
+                <h3>V Bloom Shop</h3>
+                <p>V Bloom Shop is your haven for exquisite, hand-crafted floral arrangements and gifts. We specialize in creating stunning bouquets using only the freshest, most vibrant blooms, perfect for any occasion. From romantic anniversary celebrations to heartfelt sympathy expressions, our designs are meticulously crafted to convey your emotions with unparalleled beauty and elegance. Let V Bloom Shop help you express your feelings with the language of flowers.</p>
+                <a href="http://elvieswebsite.com" target="_blank" class="popup-button">Visit Website</a>
+            </div>
+        </div>
+        <div id="description5" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('description5')">&times;</span>
+                <img src="images/rikka.jpg" alt="Rikka Joy Mansueto" class="popup-image">
+                <h1>Rikka Joy Mansueto</h1>
+                <h3>Augustea</h3>
+                <p>Discover pure delight in every sip at Augustea, where every cup of milk tea is crafted with passion and perfection. Indulge in our rich, creamy blends and refreshing flavors that promise to elevate your tea experience. Augustea - where every moment is a moment to savor!</p>
+                <a href="http://rikkawebsite.com" target="_blank" class="popup-button">Visit Website</a>
+            </div>
+        </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
